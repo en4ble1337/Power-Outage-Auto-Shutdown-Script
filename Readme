@@ -8,13 +8,19 @@ A lightweight bash script that monitors internet connectivity and gracefully shu
 
 # 🎯 Purpose
 
+---
+
 During power outages, this script ensures graceful system shutdown instead of abrupt power cut-off by monitoring internet connectivity as a proxy for power status.
 
 # 🧠 Logic
 
+---
+
 When power goes out, your ISP typically goes down too. The script monitors internet connectivity by pinging 1.1.1.1 every minute. After 5 consecutive failures (configurable), it triggers a graceful shutdown, giving you time to work on battery backup.
 
 # ✅ Benefits
+
+---
 
 **Why Graceful Shutdown Matters:**
 - Applications close properly instead of crashing
